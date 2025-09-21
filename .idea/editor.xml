@@ -207,7 +207,7 @@
     <option name="/Default/CodeInspection/Highlighting/InspectionSeverities/=CppTemplateParameterShadowing/@EntryIndexedValue" value="WARNING" type="string" />
     <option name="/Default/CodeInspection/Highlighting/InspectionSeverities/=CppThrowExpressionCanBeReplacedWithRethrow/@EntryIndexedValue" value="WARNING" type="string" />
     <option name="/Default/CodeInspection/Highlighting/InspectionSeverities/=CppTooWideScope/@EntryIndexedValue" value="SUGGESTION" type="string" />
-    <option name="/Default/CodeInspection/Highlighting/InspectionSeverities/=CppTooWideScopeInitStatement/@EntryIndexedValue" value="HINT" type="string" />
+    <option name="/Default/CodeInspection/Highlighting/InspectionSeverities/=CppTooWideScopeInitStatement/@EntryIndexedValue" value="DO_NOT_SHOW" type="string" />
     <option name="/Default/CodeInspection/Highlighting/InspectionSeverities/=CppTypeAliasNeverUsed/@EntryIndexedValue" value="WARNING" type="string" />
     <option name="/Default/CodeInspection/Highlighting/InspectionSeverities/=CppUninitializedDependentBaseClass/@EntryIndexedValue" value="WARNING" type="string" />
     <option name="/Default/CodeInspection/Highlighting/InspectionSeverities/=CppUninitializedNonStaticDataMember/@EntryIndexedValue" value="WARNING" type="string" />
@@ -259,18 +259,16 @@
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/EXPORT_DECLARATION_BRACES/@EntryValue" value="END_OF_LINE" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/FUNCTION_DECLARATION_RETURN_TYPE_STYLE/@EntryValue" value="ON_SINGLE_LINE" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/FUNCTION_DEFINITION_RETURN_TYPE_STYLE/@EntryValue" value="ON_SINGLE_LINE" type="string" />
+    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/INDENT_MEMBER_INITIALIZER_LIST/@EntryValue" value="false" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/INT_ALIGN_BITFIELD_SIZES/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/INT_ALIGN_ENUM_INITIALIZERS/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/INVOCABLE_DECLARATION_BRACES/@EntryValue" value="END_OF_LINE" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/KEEP_BLANK_LINES_IN_CODE/@EntryValue" value="1" type="long" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/KEEP_BLANK_LINES_IN_DECLARATIONS/@EntryValue" value="1" type="long" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/LINE_BREAK_AFTER_COLON_IN_MEMBER_INITIALIZER_LISTS/@EntryValue" value="ON_SINGLE_LINE" type="string" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/LINE_BREAK_AFTER_COMMA_IN_MEMBER_INITIALIZER_LISTS/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/LINE_BREAK_AFTER_DEREF_IN_TRAILING_RETURN_TYPES/@EntryValue" value="ON_SINGLE_LINE" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/LINE_BREAK_BEFORE_DEREF_IN_TRAILING_RETURN_TYPES/@EntryValue" value="ON_SINGLE_LINE" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/LINE_BREAK_BEFORE_FUNCTION_TRY_BLOCK/@EntryValue" value="LINE_BREAK" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/LINKAGE_SPECIFICATION_INDENTATION/@EntryValue" value="All" type="string" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/MEMBER_INITIALIZER_LIST_STYLE/@EntryValue" value="ON_SINGLE_LINE" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/NAMESPACE_DECLARATION_BRACES/@EntryValue" value="END_OF_LINE" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/OTHER_BRACES/@EntryValue" value="END_OF_LINE" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/OUTDENT_COMMAS/@EntryValue" value="true" type="bool" />
@@ -278,8 +276,6 @@
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/PLACE_ELSE_ON_NEW_LINE/@EntryValue" value="false" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/PLACE_WHILE_ON_NEW_LINE/@EntryValue" value="false" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/REQUIRES_EXPRESSION_BRACES/@EntryValue" value="END_OF_LINE" type="string" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/SIMPLE_BLOCK_STYLE/@EntryValue" value="LINE_BREAK" type="string" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/SIMPLE_EMBEDDED_STATEMENT_STYLE/@EntryValue" value="LINE_BREAK" type="string" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/SPACE_AFTER_CAST_EXPRESSION_PARENTHESES/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/SPACE_BEFORE_STATEMENT_PARENTHESES/@EntryValue" value="false" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/SPACE_BEFORE_TEMPLATE_PARAMS/@EntryValue" value="false" type="bool" />
@@ -289,14 +285,10 @@
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/USE_CONTINUOUS_LINE_INDENT_IN_EXPRESSION_BRACES/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_AFTER_DECLARATION_LPAR/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_AFTER_INVOCATION_LPAR/@EntryValue" value="true" type="bool" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_ARGUMENTS_STYLE/@EntryValue" value="CHOP_IF_LONG" type="string" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_BASE_CLAUSE_STYLE/@EntryValue" value="CHOP_IF_LONG" type="string" />
+    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_BEFORE_COLON/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_BEFORE_DECLARATION_RPAR/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_BEFORE_INVOCATION_RPAR/@EntryValue" value="true" type="bool" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_BRACED_INIT_LIST_STYLE/@EntryValue" value="CHOP_IF_LONG" type="string" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_CTOR_INITIALIZER_STYLE/@EntryValue" value="CHOP_IF_LONG" type="string" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_LIMIT/@EntryValue" value="100" type="long" />
-    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_PARAMETERS_STYLE/@EntryValue" value="CHOP_IF_LONG" type="string" />
+    <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/WRAP_ENUMERATION_STYLE/@EntryValue" value="WRAP_IF_LONG" type="string" />
     <option name="/Default/CodeStyle/CppIncludeDirective/SortIncludeDirectives/@EntryValue" value="true" type="bool" />
     <option name="/Default/CodeStyle/CppIncludeDirective/UseRelativePaths/@EntryValue" value="Never" type="string" />
     <option name="/Default/CodeStyle/CppPreferForwardDeclaration/PreferForwardDeclarations/@EntryValue" value="false" type="bool" />

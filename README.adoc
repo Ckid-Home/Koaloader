@@ -68,6 +68,7 @@ A list of well-known filenames (Names ending in 32 and 64 are loaded only by 32-
 * `Lyptus.dll`, `Lyptus32.dll`, `Lyptus64.dll`
 * `ScreamAPI.dll`,`ScreamAPI32.dll`,`ScreamAPI64.dll`
 * `SmokeAPI.dll`,`SmokeAPI32.dll`,`SmokeAPI64.dll`
+* `smoke_api.dll`,`smoke_api32.dll`,`smoke_api64.dll`
 * `UplayR1Unlocker.dll`, `UplayR1Unlocker32.dll`, `UplayR1Unlocker64.dll`
 * `UplayR2Unlocker.dll`, `UplayR2Unlocker32.dll`, `UplayR2Unlocker64.dll`
 

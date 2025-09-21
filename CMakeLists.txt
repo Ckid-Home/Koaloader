@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
 
-project(Koaloader VERSION 3.0.3)
+project(Koaloader VERSION 3.0.4)
 
 include(KoalaBox/cmake/KoalaBox.cmake)
 
@@ -32,7 +32,7 @@ configure_version_resource(
 )
 configure_linker_exports(
     TARGET Koaloader
-    HEADER_NAME "linker_exports"
+    HEADER_NAME "linker_exports.h"
     FORWARDED_DLL "C:/Windows/System32/${MODULE}"
     INPUT_SOURCES_DIR ""
     DLL_FILES_GLOB "C:/Windows/System32/${MODULE}.dll"

@@ -2,16 +2,16 @@
 
 #include <koalabox/config.hpp>
 #include <koalabox/globals.hpp>
-#include <koalabox/loader.hpp>
+#include <koalabox/lib.hpp>
 #include <koalabox/logger.hpp>
 #include <koalabox/path.hpp>
 #include <koalabox/str.hpp>
 #include <koalabox/util.hpp>
 #include <koalabox/win.hpp>
 
-#include <build_config.h>
+#include "build_config.h"
 
-#include <koaloader/koaloader.hpp>
+#include "koaloader/koaloader.hpp"
 
 namespace {
     namespace kb = koalabox;
@@ -47,6 +47,7 @@ namespace {
             "Lyptus",
             "ScreamAPI",
             "SmokeAPI",
+            "smoke_api",
             "UplayR1Unlocker",
             "UplayR2Unlocker",
             "KoaloaderA",
@@ -66,13 +67,13 @@ namespace {
 
     void inject_module(const fs::path& path, const bool required) {
         try {
-            koalabox::win::load_library_or_throw(path);
+            kb::lib::load_library_or_throw(path);
 
-            LOG_INFO(R"(✅ Loaded module: "{}")", path.string());
+            LOG_INFO(R"(Loaded module: "{}")", path.string());
 
             loaded = true;
         } catch(const std::exception& e) {
-            const auto message = fmt::format(
+            const auto message = std::format(
                 R"(Error loading module "{}": {})",
                 path.string(),
                 e.what()
@@ -81,8 +82,6 @@ namespace {
             if(required) {
                 koalabox::util::panic(message);
             }
-
-            LOG_WARN("{}", message);
         }
     }
 
@@ -212,7 +211,7 @@ namespace koaloader {
                 koalabox::logger::init_file_logger(kb::paths::get_log_path());
             }
 
-            LOG_INFO("{} v{} | Built at '{}'", PROJECT_NAME, PROJECT_VERSION, __TIMESTAMP__);
+            LOG_INFO("{} v{}{} | Built at '{}'", PROJECT_NAME, PROJECT_VERSION, VERSION_SUFFIX, __TIMESTAMP__);
             LOG_DEBUG("Parsed config:\n{}", nlohmann::ordered_json(config).dump(2));
 
             const auto exe_path = koalabox::win::get_module_path(nullptr);
