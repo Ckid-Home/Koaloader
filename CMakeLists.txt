@@ -4,7 +4,8 @@ project(Koaloader VERSION 3.0.4)
 
 include(KoalaBox/cmake/KoalaBox.cmake)
 
-add_subdirectory(KoalaBox EXCLUDE_FROM_ALL)
+add_subdirectory(KoalaBox)
+add_subdirectory(tools)
 
 # Get module variable
 SET(MODULE "" CACHE STRING "Some user-specified option")
